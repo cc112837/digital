@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cc.digital.fragments.ApplicationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="top"
+        android:background="@mipmap/nav_bar">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:id="@+id/iv_nav_back"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="35dp"
+                android:paddingTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/nav_menubtn" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="应用"
+                android:textColor="#ff69707a"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_sifting_category"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingBottom="14dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/category_all_pressed" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/application_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffdadada">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

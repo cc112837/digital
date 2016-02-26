@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bbs_category_cell"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="66.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/iv_app_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_left_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Title"
+                        android:textColor="#ff58585a"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/hot_download" />
+    </LinearLayout>
+
+</LinearLayout>

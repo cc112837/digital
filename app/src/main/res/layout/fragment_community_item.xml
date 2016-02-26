@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_community_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.cc.digital.fragments.community.CommunityItemFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/community_two_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"></WebView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#efefee"
+        android:paddingLeft="15dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@mipmap/comment" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:text="添加评论"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/community_two_fav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/toolbar_fav_selector" />
+
+        <ImageView
+            android:id="@+id/community_two_good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/toolbar_good_selector" />
+    </LinearLayout>
+</RelativeLayout>

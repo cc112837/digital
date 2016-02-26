@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@mipmap/category_dgtle_logo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/tv_community_item2_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/tv_community_item2_dateline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/tv_community_item2_author"
+            android:layout_toRightOf="@+id/tv_community_item2_author"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/tv_community_item2_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:singleLine="true"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/tv_community_item2_typeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:text="New Text" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/comment" />
+
+        <TextView
+            android:id="@+id/tv_community_item2_replies"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="99" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/community_item_container"
+    tools:context=".CommunityItem">
+
+    <RelativeLayout
+        android:id="@+id/community_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@mipmap/nav_bar"
+        android:paddingTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:id="@+id/community_one_back"
+                android:layout_width="60.0dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/bbs_page_previous" />
+
+            <TextView
+                android:id="@+id/community_one_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:text="社区"
+                android:textColor="#ff69707a"
+                android:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@+id/community_one_edit"
+                android:layout_width="60.0dip"
+                android:layout_height="28.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/nav_bbs_new" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.cc.digital.mylayout.RefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp">
+
+        <ListView
+            android:id="@+id/community_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </com.cc.digital.mylayout.RefreshLayout>
+</RelativeLayout>

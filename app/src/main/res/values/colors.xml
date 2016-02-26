@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ededed</color>
+    <color name="colorPrimaryDark">#c6c6c6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_bule2">#00ff00</color>
+    <color name="color_bule">#0adf0d</color>
+    <color name="color_bule3">#df0023</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+</resources>

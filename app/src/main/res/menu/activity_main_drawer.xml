@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/it_home"
+            android:icon="@mipmap/menu_icon_home"
+            android:title="主页" />
+        <item
+            android:id="@+id/it_comment"
+            android:icon="@mipmap/menu_icon_comment"
+            android:title="社区" />
+        <item
+            android:id="@+id/it_application"
+            android:icon="@mipmap/application_icon"
+            android:title="应用" />
+        <item
+            android:id="@+id/it_news"
+            android:icon="@mipmap/news_icon"
+            android:title="资讯" />
+        <item
+            android:id="@+id/it_hot"
+            android:icon="@mipmap/hot_icon"
+            android:title="热门" />
+        <item
+            android:id="@+id/it_draft"
+            android:icon="@mipmap/draft_icon"
+            android:title="草稿" />
+        <item
+            android:id="@+id/it_setting"
+            android:icon="@mipmap/cell_setting_icon"
+            android:title="设置" />
+    </group>
+</menu>
