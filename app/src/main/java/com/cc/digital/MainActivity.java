@@ -25,7 +25,7 @@ import com.cc.digital.fragments.HotFragment;
 import com.cc.digital.fragments.NewsFragment;
 import com.cc.digital.fragments.SettingFragment;
 
-
+//关于侧滑的
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private Fragment fragment;
@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity
         //侧滑的
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-//        LinearLayout nav_header_main = (LinearLayout) navigationView.inflateHeaderView(R.layout.header_main);
-//        nav_header_main.setVisibility(View.GONE);
+
 
         //fragment容器
         FrameLayout frameLayout=(FrameLayout) findViewById(R.id.fl_container);
